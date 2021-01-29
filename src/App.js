@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className="App">
-      <Year setSelectedYear={setSelectedYear}/>
+      <Year setSelectedYear={setSelectedYear} selectedYear={selectedYear}/>
       <MapChart setTooltipContent={setContent} SELECTED_YEAR={selectedYear} />
       <ReactTooltip>{content}</ReactTooltip>
     </div>
